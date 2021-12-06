@@ -9,7 +9,7 @@ test('Test Iterator', () => {
     attack: 40,
     defence: 10,
   };
-  
+
   const daem = {
     name: 'Демон',
     type: 'Daemon',
@@ -18,7 +18,7 @@ test('Test Iterator', () => {
     attack: 10,
     defence: 40,
   };
-  
+
   const end = { done: true, value: undefined };
   const team = new Team(char, daem).iterator();
   expect(team.next().value).toEqual(char);
